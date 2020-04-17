@@ -6,7 +6,7 @@ function Ascensor({ data }) {
     <div
       style={{
         width: "100%",
-        height: "900px",
+        height: "100vh",
         maxWidth: "900px",
         margin: "0 auto",
         border: "1px solid gray",

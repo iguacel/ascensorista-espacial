@@ -73,7 +73,7 @@ export default function () {
 
           <Ascensor data={data[index]} />
 
-          <div className="bg" style={{ marginTop: "-900px" }}>
+          <div className="bg" style={{ marginTop: "-100vh" }}>
             {data.map((x) => {
               return (
                 <Fragment key={`n${x.index}`}>
