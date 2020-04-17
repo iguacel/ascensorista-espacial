@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ascensorista-espacial/precache-manifest.9703ad0c8ea5fcc95c20c7a279ceec30.js"
+  "/ascensorista-espacial/precache-manifest.d34128299bd1b0f9433d7a5763f7c33d.js"
 );
 
 self.addEventListener('message', (event) => {
