@@ -1,0 +1,60 @@
+.burguer-wrapper {
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	z-index: 101;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: space-between;
+	flex-wrap: wrap;
+	z-index: 100;
+	opacity: 0.9;
+	width: 32px;
+	height: 34px;
+	cursor: pointer;
+}
+
+.burguer-wrapper>a {
+	text-decoration: none;
+	font-size: 1.7em;
+	letter-spacing: 0.1em;
+	font-weight: 700;
+}
+
+.navSquares {
+	background: var(--background-color);
+	flex-basis: 0 10px;
+	height: 12px;
+	width: 12px;
+	border: 1px solid var(--foreground-color);
+	box-sizing: content-box
+}
+
+.n1 {
+  transition: all 200ms;
+	transition-delay: 0ms;
+}
+
+.n2 {
+  transition: all 200ms;
+	transition-delay: 50ms;
+}
+
+.n3 {
+  transition: all 200ms;
+	transition-delay: 50ms;
+}
+
+.n4 {
+  transition: all 200ms;
+	transition-delay: 100ms;
+}
+
+@media (max-width: 440px) {
+	.burguer-wrapper,
+	.modal {
+		top: 20px;
+		left: 20px;
+	}
+}
