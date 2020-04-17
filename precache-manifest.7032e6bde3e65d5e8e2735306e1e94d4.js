@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "82a592ee2312378a2343147c7fd8866b",
+    "revision": "2ff42c6a9c3b5aa9eb1190ad07aa9f36",
     "url": "/ascensorista-espacial/index.html"
   },
   {
-    "revision": "eed36920b9657ce8506d",
-    "url": "/ascensorista-espacial/static/css/4.21ea85b1.chunk.css"
+    "revision": "ad5f8fee9bcb08751b09",
+    "url": "/ascensorista-espacial/static/css/4.8a09985a.chunk.css"
   },
   {
     "revision": "f0d73b70a69a61c23f30",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ascensorista-espacial/static/js/3.1b3ef941.chunk.js"
   },
   {
-    "revision": "eed36920b9657ce8506d",
+    "revision": "ad5f8fee9bcb08751b09",
     "url": "/ascensorista-espacial/static/js/4.64e1e1fb.chunk.js"
   },
   {
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ascensorista-espacial/static/js/main.a0c40230.chunk.js"
   },
   {
-    "revision": "db11b2e3b1830e2a1259",
-    "url": "/ascensorista-espacial/static/js/runtime-main.4b799413.js"
+    "revision": "a1be079aa49accf9f30d",
+    "url": "/ascensorista-espacial/static/js/runtime-main.1dd03940.js"
   },
   {
     "revision": "b3d490aaafc0687821b93fccb6af7ead",
