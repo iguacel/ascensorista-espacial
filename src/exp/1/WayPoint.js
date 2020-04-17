@@ -15,6 +15,7 @@ export default function ({ onEnter, data, windowHeight }) {
         justifyContent: "center",
         alignItems: "center",
         background: `url(./img/1/bg/${data.index}.png)`,
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
