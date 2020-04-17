@@ -3,6 +3,7 @@ import { Waypoint } from "react-waypoint";
 
 export default function ({ onEnter, data, windowHeight }) {
   return (
+
     <div
       className="final"
       style={{
@@ -18,6 +19,7 @@ export default function ({ onEnter, data, windowHeight }) {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+        border: "1px solid pink"
       }}
     >
       <Waypoint
@@ -25,7 +27,7 @@ export default function ({ onEnter, data, windowHeight }) {
         onEnter={() => onEnter(data.index)}
         topOffset="50%"
       />
-      <p
+      {/* <p
         style={{
           position: "relative",
           zIndex: 3,
@@ -36,8 +38,42 @@ export default function ({ onEnter, data, windowHeight }) {
         }}
       >
         {data.texto}
-      </p>
+      </p> */}
+
+
+      {/* Foreground */}
+
+      <div
+        className="final"
+        style={{
+          position: "relative",
+          width: "100%",
+          height: `${windowHeight}px`,
+          maxWidth: "900px",
+          margin: "0 auto",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          background: `url(./img/1/fg/${data.index}.png)`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          border: "1px solid pink",
+          zIndex: 3
+        }}
+      >
+        <Waypoint
+          onPositionChange={() => data && data.index && data.index}
+          onEnter={() => onEnter(data.index)}
+          topOffset="50%"
+        />
+
+      </div>
     </div>
+
+
+
+
   );
 }
 
