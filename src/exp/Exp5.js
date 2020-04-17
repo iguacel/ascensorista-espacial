@@ -19,10 +19,12 @@ export default function () {
         marginTop: "90px",
       }}
     >
-      <h1>Ascensorista 5</h1>
+      <h1>Ascensorista 1</h1>
       <p>
         width: {width} px, height: {height} px
       </p>
+
+      <img src="./img/1.jpg" alt="" style={{ width: "100%" }} />
     </div>
   );
 }
