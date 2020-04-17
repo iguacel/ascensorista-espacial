@@ -9,7 +9,6 @@ function Ascensor({ data, windowHeight }) {
         height: `${windowHeight}px`,
         maxWidth: "900px",
         margin: "0 auto",
-        border: "1px solid gray",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
