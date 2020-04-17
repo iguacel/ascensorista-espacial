@@ -35,7 +35,7 @@ export default function () {
           style={{
             background: "black",
             background:
-              "linear-gradient(to bottom, #000000 0%,#24146b 38%,#84c9d6 87%,#f4d0a6 100%)",
+              "linear-gradient(to bottom, #000000 0%,#24146b 68%,#84c9d6 87%,#f4d0a6 100%)",
           }}
         >
           {<Altura index={index} bounds={bounds} data={data} />}
@@ -79,6 +79,21 @@ export default function () {
               style={{ width: "100%", margin: "1em 0 0 0" }}
             />
           </div>
+
+          <div
+            style={{
+              color: "white",
+              maxWidth: "450px",
+              margin: "0 auto",
+              padding: "2em 1em 2em 1em",
+            }}
+          >
+            <p>
+              Durante estos años he visto de todo...
+              </p>
+
+          </div>
+
 
           <Ascensor data={data[index]} windowHeight={height} />
 
