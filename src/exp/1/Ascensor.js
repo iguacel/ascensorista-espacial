@@ -1,12 +1,12 @@
 import React from "react";
 const isSafari = window.safari !== undefined;
 
-function Ascensor({ data }) {
+function Ascensor({ data, windowHeight }) {
   return (
     <div
       style={{
         width: "100%",
-        height: "100vh",
+        height: `${windowHeight}px`,
         maxWidth: "900px",
         margin: "0 auto",
         border: "1px solid gray",

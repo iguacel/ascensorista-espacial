@@ -2,6 +2,10 @@ import React, { Fragment, useState } from "react";
 import useMeasure from "react-use-measure";
 import { ResizeObserver } from "@juggle/resize-observer";
 
+import {
+  useWindowSize,
+} from '@react-hook/window-size/throttled';
+
 import WayPoint from "./1/WayPoint";
 import Ascensor from "./1/Ascensor";
 import Altura from "./1/Altura";
@@ -13,9 +17,14 @@ export default function () {
 
   const [ref, bounds] = useMeasure({ scroll: true, polyfill: ResizeObserver });
 
+  const [width, height] = useWindowSize()
+  console.log(height);
+
   const onEnter = (index) => {
     setIndex(index);
   };
+
+  console.log(bounds);
 
   return (
     <div>
@@ -71,13 +80,13 @@ export default function () {
             />
           </div>
 
-          <Ascensor data={data[index]} />
+          <Ascensor data={data[index]} windowHeight={height} />
 
-          <div className="bg" style={{ marginTop: "-100vh" }}>
+          <div className="bg" style={{ marginTop: `-${height}px` }}>
             {data.map((x) => {
               return (
                 <Fragment key={`n${x.index}`}>
-                  <WayPoint onEnter={onEnter} data={x} />
+                  <WayPoint onEnter={onEnter} data={x} windowHeight={height} />
                 </Fragment>
               );
             })}

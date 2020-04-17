@@ -1,14 +1,14 @@
 import React from "react";
 import { Waypoint } from "react-waypoint";
 
-export default function ({ onEnter, data }) {
+export default function ({ onEnter, data, windowHeight }) {
   return (
     <div
       className="final"
       style={{
         position: "relative",
         width: "100%",
-        height: "100vh",
+        height: `${windowHeight}px`,
         maxWidth: "900px",
         margin: "0 auto",
         display: "flex",
