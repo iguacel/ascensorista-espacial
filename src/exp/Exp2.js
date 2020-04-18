@@ -28,7 +28,6 @@ export default function () {
           }}
         >
 
-          {/* Fondo estrellas */}
           <div
             style={{
               maxWidth: "900px",

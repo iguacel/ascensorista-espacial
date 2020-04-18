@@ -19,8 +19,6 @@ export default ({ index, data, windowHeight }) => {
 
         <img style={{ position: "absolute", top: 0, right: "20px", bottom: 0, zIndex: 0, transform: `translate(0, ${bounds.top / 5}px)`, zIndex: 3 }} src="./img/2/fondos/satellite4.svg" width="20%" alt="" />
 
-        <img style={{ position: "absolute", top: 0, right: "20px", bottom: 0, zIndex: 0, transform: `translate(0, ${bounds.top / 2}px)`, zIndex: 0 }} src="./img/2/fondos/stars.svg" width="100%" alt="" />
-
         <Altura index={index} bounds={bounds} data={data} />
 
         <FullSvg bounds={bounds} windowHeight={windowHeight} />
