@@ -36,9 +36,10 @@ function FullSvg({ bounds, windowHeight }) {
         style={{ margin: "0 auto", overflow: "visible" }}
         viewBox={`0 0 ${bounds.width} ${bounds.height}`}
       >
+
         <line
           x1={bounds.width / 2 + margin}
-          y1={windowHeight - windowHeight / 8}
+          y1={windowHeight - windowHeight / 6.9}
           x2={bounds.width / 2 + margin}
           y2={bounds.height - 300}
           style={{ stroke: color, strokeWidth: 12 }}
@@ -46,7 +47,7 @@ function FullSvg({ bounds, windowHeight }) {
 
         <line
           x1={bounds.width / 2 - margin}
-          y1={windowHeight - windowHeight / 8}
+          y1={windowHeight - windowHeight / 6.9}
           x2={bounds.width / 2 - margin}
           y2={bounds.height - 300}
           style={{ stroke: color, strokeWidth: 12 }}
