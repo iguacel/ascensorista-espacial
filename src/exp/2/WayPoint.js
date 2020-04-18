@@ -74,7 +74,7 @@ export default function ({ onEnter, data, windowHeight }) {
             zIndex: "2",
           }}
         >
-          <p
+          <p className="floating"
             style={{
               zIndex: 3,
               margin: "0 60px 0 60px",

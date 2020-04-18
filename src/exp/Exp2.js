@@ -83,7 +83,7 @@ export default function () {
           <Ascensor data={data[index]} windowHeight={height} />
 
           <div className="parallax" style={{ position: "relative" }}>
-            <Fondos index={index} data={data} />
+            <Fondos index={index} data={data} windowHeight={height} />
             <div className="bg" style={{ marginTop: `-${height}px` }}>
               {data.map((x) => {
                 return (
