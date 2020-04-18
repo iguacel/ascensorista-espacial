@@ -22,7 +22,6 @@ export default function () {
         <div
           className="comic"
           style={{
-            background: "black",
             background:
               "linear-gradient(to bottom, RGBA(37, 50, 55, 1.00) 0%,RGBA(64, 81, 167, 1.00) 68%,#84c9d6 87%,#f4d0a6 100%)",
           }}

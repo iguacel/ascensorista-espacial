@@ -33,7 +33,6 @@ export default function () {
           className="comic"
           ref={ref}
           style={{
-            background: "black",
             background:
               "linear-gradient(to bottom, #000000 0%,#24146b 68%,#84c9d6 87%,#f4d0a6 100%)",
           }}
