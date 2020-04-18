@@ -4,13 +4,17 @@ import { randomInt, random } from "../../utils/utils";
 const randomStars = (width, height, n = 100) => {
   return new Array(n).fill().map((_, i) => {
     return (
-      <circle className="flicker"
+      <circle
+        className="flicker"
         key={`star${i}`}
         cx={randomInt(0, width)}
         cy={randomInt(0, height)}
         r={randomInt(2, 4)}
         fill={`RGBA(255, 255, 255, ${random(0.2, 1)}`}
-        style={{ animationDelay: `${randomInt(0, 1200)}ms` }}
+        style={{
+          animationDelay: `${randomInt(0, 1200)}ms`,
+          animationDuration: `${randomInt(1, 6)}s`,
+        }}
       />
     );
   });
@@ -21,7 +25,8 @@ function FullSvg({ bounds, windowHeight }) {
   const color = "RGBA(219, 231, 229, 0.80)";
 
   const stars = useMemo(
-    () => randomStars(bounds.width, windowHeight * 2, Math.floor(bounds.width / 4)),
+    () =>
+      randomStars(bounds.width, windowHeight * 2, Math.floor(bounds.width / 4)),
     [bounds.width, windowHeight]
   );
 
