@@ -21,14 +21,14 @@ export default ({ index, data, windowHeight }) => {
 
         <div class="star comet"></div>
 
-
-        <img
+        <img className="rotate"
           style={{
             position: "absolute",
-            top: `${windowHeight * 2 + 20}px`,
+            top: `${windowHeight * 2 - 60}px`,
             left: `${bounds.width / 2 - 90}px`,
             zIndex: 0,
             transform: `translate(0, ${bounds.top / 2}px) scaleX(-1)`,
+            transformOrigin: "50% 50%"
           }}
           src="./img/2/fondos/satellite3.svg"
           width="120px"
