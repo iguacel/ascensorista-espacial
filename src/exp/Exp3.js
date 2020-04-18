@@ -19,7 +19,7 @@ export default function () {
         marginTop: "90px",
       }}
     >
-      <h1>Ascensorista 3</h1>
+      <h1>Ascensorista 4</h1>
       <p>
         width: {width} px, height: {height} px
       </p>

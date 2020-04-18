@@ -1,44 +1,32 @@
 import React, { Fragment, useState } from "react";
-import useMeasure from "react-use-measure";
-import { ResizeObserver } from "@juggle/resize-observer";
-
-import {
-  useWindowSize,
-} from '@react-hook/window-size/throttled';
+import { useWindowHeight } from "@react-hook/window-size/throttled";
 
 import WayPoint from "./2/WayPoint";
 import Ascensor from "./2/Ascensor";
-import Altura from "./2/Altura";
+import Fondos from "./2/Fondos";
 import data from "./2/data";
 import "./2/style.css";
 
 export default function () {
   const [index, setIndex] = useState(0);
 
-  const [ref, bounds] = useMeasure({ scroll: true, polyfill: ResizeObserver });
-
-  const [width, height] = useWindowSize()
-  console.log(height);
+  const height = useWindowHeight();
 
   const onEnter = (index) => {
     setIndex(index);
   };
-
-  console.log(bounds);
 
   return (
     <div>
       <div className="comic">
         <div
           className="comic"
-          ref={ref}
           style={{
             background: "black",
             background:
-              "linear-gradient(to bottom, #000000 0%,#24146b 68%,#84c9d6 87%,#f4d0a6 100%)",
+              "linear-gradient(to bottom, RGBA(37, 50, 55, 1.00) 0%,RGBA(64, 81, 167, 1.00) 68%,#84c9d6 87%,#f4d0a6 100%)",
           }}
         >
-          {<Altura index={index} bounds={bounds} data={data} />}
 
           {/* Fondo estrellas */}
           <div
@@ -88,23 +76,27 @@ export default function () {
               padding: "2em 1em 2em 1em",
             }}
           >
-            <p>
-              Durante estos años he visto de todo...
-              </p>
+            <p>Durante estos años he visto de todo...</p>
 
           </div>
 
-
           <Ascensor data={data[index]} windowHeight={height} />
 
-          <div className="bg" style={{ marginTop: `-${height}px` }}>
-            {data.map((x) => {
-              return (
-                <Fragment key={`n${x.index}`}>
-                  <WayPoint onEnter={onEnter} data={x} windowHeight={height} />
-                </Fragment>
-              );
-            })}
+          <div className="parallax" style={{ position: "relative" }}>
+            <Fondos index={index} data={data} />
+            <div className="bg" style={{ marginTop: `-${height}px` }}>
+              {data.map((x) => {
+                return (
+                  <Fragment key={`n${x.index}`}>
+                    <WayPoint
+                      onEnter={onEnter}
+                      data={x}
+                      windowHeight={height}
+                    />
+                  </Fragment>
+                );
+              })}
+            </div>
           </div>
         </div>
 
