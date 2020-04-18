@@ -35,7 +35,7 @@ export default ({ index, data, windowHeight }) => {
           alt=""
         />
 
-        <img
+        <img className="floatingSat"
           style={{
             position: "absolute",
             top: 0,

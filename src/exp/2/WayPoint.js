@@ -13,7 +13,7 @@ export default function ({ onEnter, data, windowHeight }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        border: "1px solid green",
+        border: "1px solid lime",
         // background: `url(./img/2/bg/${data.index}.png)`,
         backgroundSize: "cover",
         // backgroundRepeat: "no-repeat",
@@ -36,7 +36,6 @@ export default function ({ onEnter, data, windowHeight }) {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          border: "1px solid red",
           zIndex: "2",
         }}
       >
@@ -50,7 +49,6 @@ export default function ({ onEnter, data, windowHeight }) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            border: "1px solid red",
             zIndex: "2",
           }}
         >
@@ -70,7 +68,7 @@ export default function ({ onEnter, data, windowHeight }) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            border: "1px solid red",
+            border: "1px solid cyan",
             zIndex: "2",
           }}
         >
