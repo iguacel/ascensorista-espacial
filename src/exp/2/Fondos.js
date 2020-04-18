@@ -18,16 +18,20 @@ export default ({ index, data, windowHeight }) => {
           height: "100%",
         }}
       >
+
+        <div class="star comet"></div>
+
+
         <img
           style={{
             position: "absolute",
-            top: "200px",
-            left: `${bounds.width / 2 - 80}px`,
+            top: `${windowHeight * 2 + 20}px`,
+            left: `${bounds.width / 2 - 90}px`,
             zIndex: 0,
             transform: `translate(0, ${bounds.top / 2}px) scaleX(-1)`,
           }}
-          src="./img/2/fondos/satellite4.svg"
-          width="50px"
+          src="./img/2/fondos/satellite3.svg"
+          width="120px"
           alt=""
         />
 
