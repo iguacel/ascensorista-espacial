@@ -80,7 +80,6 @@ const Previa = ({ data, ultimo }) => {
         }}
         to={`/exp/${data.index}`}
       >
-
         <Image data={data} />
 
         <p
@@ -89,6 +88,7 @@ const Previa = ({ data, ultimo }) => {
             maxWidth: "90%",
             fontWeight: "700",
             marginBottom: "var(--baseline)",
+            lineHeight: "1.2em",
           }}
         >
           {data.title}
