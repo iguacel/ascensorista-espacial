@@ -1,17 +1,25 @@
 
-.main > a {
-    white-space: normal !important;
-    background: gold;
-}
 
 .logo {
     width: 160px;
     height: 160px;
 }
 
-@media (min-width: 768px) {
+.cabecera {
+    width: 110px;
+}
+
+
+@media (min-width: 568px) {
     .logo {
         width: 210px;
         height: 210px;
     }
+}
+
+@media (min-width: 850px) {
+    .cabecera {
+        width: 180px;
+    }
+
 }
