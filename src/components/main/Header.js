@@ -17,8 +17,6 @@ export default () => {
           <div
             className="logo"
             style={{
-              width: "160px",
-              height: "160px",
               background: "#493745",
               display: "flex",
               flexDirection: "column",
@@ -43,7 +41,7 @@ export default () => {
           }}>
             COMPARTE
         </h6>
-        Face - twitter - whatsapp - telegram
+        face - twitter - whatsapp - telegram
         </div>
       </header>
     </>
