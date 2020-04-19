@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.b6a45a80.chunk.js": "/ascensorista-espacial/static/js/0.b6a45a80.chunk.js",
     "static/js/0.b6a45a80.chunk.js.map": "/ascensorista-espacial/static/js/0.b6a45a80.chunk.js.map",
-    "main.css": "/ascensorista-espacial/static/css/main.8bda5447.chunk.css",
+    "main.css": "/ascensorista-espacial/static/css/main.d7fc3528.chunk.css",
     "main.js": "/ascensorista-espacial/static/js/main.0188c8eb.chunk.js",
     "main.js.map": "/ascensorista-espacial/static/js/main.0188c8eb.chunk.js.map",
     "runtime-main.js": "/ascensorista-espacial/static/js/runtime-main.c54b3691.js",
@@ -26,11 +26,11 @@
     "static/js/10.7215aa9d.chunk.js": "/ascensorista-espacial/static/js/10.7215aa9d.chunk.js",
     "static/js/10.7215aa9d.chunk.js.map": "/ascensorista-espacial/static/js/10.7215aa9d.chunk.js.map",
     "index.html": "/ascensorista-espacial/index.html",
-    "precache-manifest.6d7ba22f23f719e16aa0292cf71e71aa.js": "/ascensorista-espacial/precache-manifest.6d7ba22f23f719e16aa0292cf71e71aa.js",
+    "precache-manifest.9347dacd96db1c90c31f1cc8b494bad0.js": "/ascensorista-espacial/precache-manifest.9347dacd96db1c90c31f1cc8b494bad0.js",
     "service-worker.js": "/ascensorista-espacial/service-worker.js",
     "static/css/4.8a09985a.chunk.css.map": "/ascensorista-espacial/static/css/4.8a09985a.chunk.css.map",
     "static/css/5.c195c81b.chunk.css.map": "/ascensorista-espacial/static/css/5.c195c81b.chunk.css.map",
-    "static/css/main.8bda5447.chunk.css.map": "/ascensorista-espacial/static/css/main.8bda5447.chunk.css.map",
+    "static/css/main.d7fc3528.chunk.css.map": "/ascensorista-espacial/static/css/main.d7fc3528.chunk.css.map",
     "static/js/10.7215aa9d.chunk.js.LICENSE.txt": "/ascensorista-espacial/static/js/10.7215aa9d.chunk.js.LICENSE.txt",
     "static/js/3.6b4aa890.chunk.js.LICENSE.txt": "/ascensorista-espacial/static/js/3.6b4aa890.chunk.js.LICENSE.txt",
     "static/media/burguer.mp3": "/ascensorista-espacial/static/media/burguer.b3d490aa.mp3",
@@ -41,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.c54b3691.js",
     "static/js/3.6b4aa890.chunk.js",
-    "static/css/main.8bda5447.chunk.css",
+    "static/css/main.d7fc3528.chunk.css",
     "static/js/main.0188c8eb.chunk.js"
   ]
 }
