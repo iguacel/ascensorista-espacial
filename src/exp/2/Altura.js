@@ -31,7 +31,7 @@ function Altura({ bounds, index, data }) {
           padding: "1em",
           border: "1px solid white",
           display: "flex",
-          fontSize: "0.9em"
+          fontSize: "0.9em",
         }}
       >
         <h6 style={{ opacity: 0.6 }}>Altura: </h6>

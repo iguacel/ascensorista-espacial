@@ -26,7 +26,6 @@ export default function () {
               "linear-gradient(to bottom, #03061A 0%, RGBA(64, 81, 167, 1.00) 68%, #84c9d6 87%,#f4d0a6 100%)",
           }}
         >
-
           <div
             style={{
               maxWidth: "900px",
@@ -75,10 +74,9 @@ export default function () {
             }}
           >
             <p>Durante estos años he visto de todo...</p>
-
           </div>
 
-          <Ascensor data={data[index]} windowHeight={height} />
+          <Ascensor data={data} index={index} windowHeight={height} />
 
           <div className="parallax" style={{ position: "relative" }}>
             <Fondos index={index} data={data} windowHeight={height} />

@@ -16,26 +16,28 @@ export default ({ index, data, windowHeight }) => {
           position: "absolute",
           width: "100%",
           height: "100%",
+          overflow: "hidden",
         }}
       >
+        <div className="star comet"></div>
 
-        <div class="star comet"></div>
-
-        <img className="rotate"
+        <img
+          className="rotate"
           style={{
             position: "absolute",
             top: `${windowHeight * 2 - 60}px`,
             left: `${bounds.width / 2 - 90}px`,
             zIndex: 0,
             transform: `translate(0, ${bounds.top / 2}px) scaleX(-1)`,
-            transformOrigin: "50% 50%"
+            transformOrigin: "50% 50%",
           }}
           src="./img/2/fondos/satellite3.svg"
           width="120px"
           alt=""
         />
 
-        <img className="floatingSat"
+        <img
+          className="floatingSat"
           style={{
             position: "absolute",
             top: 0,

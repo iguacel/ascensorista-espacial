@@ -13,12 +13,11 @@ export default function ({ onEnter, data, windowHeight }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        border: "1px solid lime",
+        border: "1px solid pink",
         // background: `url(./img/2/bg/${data.index}.png)`,
-        backgroundSize: "cover",
+        // backgroundSize: "cover",
         // backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        // border: "1px solid pink"
+        // backgroundPosition: "center",
       }}
     >
       <Waypoint
@@ -72,7 +71,8 @@ export default function ({ onEnter, data, windowHeight }) {
             zIndex: "2",
           }}
         >
-          <p className="floating"
+          <p
+            className="floating"
             style={{
               zIndex: 3,
               margin: "0 60px 0 60px",
