@@ -21,11 +21,11 @@ export default () => {
         style={{
           maxWidth: "900px",
           margin: "0 auto",
-          marginTop: "1em",
+          marginTop: "-1em",
           padding: "1em",
         }}
       >
-        <Header />
+        <Header index={index} />
 
         {/* Destacados */}
         <div className="flex" style={{}}>

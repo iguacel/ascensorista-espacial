@@ -15,11 +15,15 @@ export default () => {
           alignItems: "center",
         }}
       >
-        <h6 style={{ fontWeight: 700, fontSize: "0.9em" }}>
-          El ascensorista espacial
-      </h6>
+        <h6 style={{
+          fontWeight: 400, letterSpacing: "0.05em", fontSize: "0.65em",
+        }}>
+          THE PILOT DOG
+        </h6>
 
-        <h6 style={{ fontWeight: 400, fontSize: "0.85em", letterSpacing: "0.05em" }}>
+        <h6 style={{
+          fontWeight: 400, letterSpacing: "0.05em", fontSize: "0.65em",
+        }}>
           <a
             href="https://calvichis.com/"
             target="_blank"
@@ -29,7 +33,6 @@ export default () => {
           </a>{" "}
         </h6>
       </div>
-
     </div>
   );
-}
+};
