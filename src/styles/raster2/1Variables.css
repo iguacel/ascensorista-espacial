@@ -67,6 +67,7 @@ Variables
   --blue: rgb(24, 113, 233);
   --green: rgb(18, 192, 91);
   --yellow: rgb(249, 191, 15);
+  --gray: RGBA(219, 231, 229, 1.00);
 }
 @supports (font-variation-settings: normal) {
   :root {
@@ -127,4 +128,10 @@ Variables
 }
 .bg-yellow {
   background-color: var(--yellow);
+}
+.gray {
+  color: var(--gray);
+}
+.bg-gray {
+  background-color: var(--gray);
 }

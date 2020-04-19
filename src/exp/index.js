@@ -25,7 +25,7 @@ export default {
     id: "exp_2",
     index: 2,
     destacado: true,
-    title: "Ascensorista espacial",
+    title: "El ascensorista espacial",
     date: "20-04-2020",
     info: (
       <p>
@@ -57,7 +57,7 @@ export default {
     id: "exp_4",
     index: 4,
     destacado: false,
-    title: "Cuarta",
+    title: "Cuarto título larguísimo para pruebas en main",
     date: "25-04-2020",
     info: (
       <p>
@@ -69,7 +69,7 @@ export default {
     id: "exp_5",
     index: 5,
     destacado: false,
-    title: "Quinto",
+    title: "Quinto título larguísimo para pruebas en main",
     date: "25-05-2020",
     info: (
       <p>

@@ -5,12 +5,16 @@ import { useSpring, animated } from "react-spring";
 import { useMeasure } from "react-use";
 import { useLocation } from "react-router-dom";
 // Sound imports
-import useSound from 'use-sound';
+import useSound from "use-sound";
 import { volume } from "../sound/volume";
-import clickSound from '../sound/click.mp3';
-import infoSound from '../sound/info.mp3';
+import clickSound from "../sound/click.mp3";
+import infoSound from "../sound/info.mp3";
 // Index
 import index from "../../exp/index.js";
+
+import Follow from "../main/Follow";
+
+import { truncate } from "../../utils/utils";
 
 // const n = Object.keys(index).length;
 const n = 5;
@@ -44,29 +48,24 @@ const Accordion = ({ currentPage, title, info, date }) => {
   const [on, toggle] = useState(false);
   const [ref, { height, top }] = useMeasure();
 
-  const [playClick] = useSound(clickSound,
-    { volume });
-  const [playInfo] = useSound(infoSound,
-    { volume });
+  const [playClick] = useSound(clickSound, { volume });
+  const [playInfo] = useSound(infoSound, { volume });
 
   const animation = useSpring({
-    height: on ? height + top * 2 : 0
+    height: on ? height + top * 2 : 0,
   });
 
   useEffect(() => {
     document.title = `${title}`;
   });
 
-
   return (
-    <div
-      className="navWrapper"
-    >
+    <div className="navWrapper">
       <div
         className="navButtons"
         style={{
           display: "flex",
-          height: "40px"
+          height: "40px",
         }}
       >
         <div
@@ -75,17 +74,23 @@ const Accordion = ({ currentPage, title, info, date }) => {
             display: "flex",
             alignItems: "center",
             paddingLeft: "1em",
-            flex: "0 1 100%"
+            flex: "0 1 100%",
           }}
         >
-          <h1 style={{ fontSize: "1.2em", lineHeight: "1.2em" }}>{title}</h1>
+          <h1 style={{ fontSize: "1.2em", lineHeight: "1.2em" }}>
+            {truncate(title, 26)}
+          </h1>
         </div>
 
-        <div className="infoButton"
+        <div
+          className="infoButton"
           onClick={() => {
             toggle(!on);
             playInfo();
-          }}>{date && <InfoIcon on={on} />}</div>
+          }}
+        >
+          {date && <InfoIcon on={on} />}
+        </div>
         <div className="prevButton">
           <Link
             onClick={() => {
@@ -122,7 +127,7 @@ const Accordion = ({ currentPage, title, info, date }) => {
           style={{
             borderTop: "1px solid var(--foreground-color)",
             padding: "1em",
-            margin: "0 auto"
+            margin: "0 auto",
           }}
         >
           {date && (
@@ -131,7 +136,7 @@ const Accordion = ({ currentPage, title, info, date }) => {
               style={{
                 fontSize: "0.9em",
                 textTransform: "uppercase",
-                letterSpacing: "0.1em"
+                letterSpacing: "0.1em",
               }}
             >
               {date}
@@ -140,45 +145,7 @@ const Accordion = ({ currentPage, title, info, date }) => {
 
           {info && info}
 
-          <p className="small" style={{ maxWidth: "80%", marginTop: "-1em" }}><strong>Síguenos</strong> en {" "}
-            <a
-              href="https://es-es.facebook.com/camisetascalvichi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Facebook,
-              </a>{" "}
-            <a
-              href="https://twitter.com/calvichis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter,
-            </a>{" "}
-            <a
-              href="https://www.youtube.com/channel/UCxFAmNCJRC4sLEAdk1W5jGA"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              YouTube,
-            </a>
-            {" "}
-            <a
-              href="https://www.instagram.com/calvichis/?hl=es"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
-            {" "} y  {" "}
-            <a
-              href="https://calvichis.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Mundo Calvichis.
-            </a>
-          </p>
+          <Follow />
         </div>
       </animated.div>
     </div>
@@ -193,7 +160,7 @@ const NextIcon = () => {
       viewBox="0 0 20 20"
       style={{
         flex: "0 0 40px",
-        borderLeft: "1px solid var(--foreground-color)"
+        borderLeft: "1px solid var(--foreground-color)",
       }}
     >
       <path fill="var(--foreground-color)" d="M14.8 10L6.7 5.5v9l8.1-4.5z" />
@@ -209,7 +176,7 @@ const PrevIcon = () => {
       viewBox="0 0 20 20"
       style={{
         flex: "0 0 40px",
-        borderLeft: "1px solid var(--foreground-color)"
+        borderLeft: "1px solid var(--foreground-color)",
       }}
     >
       <path
@@ -221,7 +188,7 @@ const PrevIcon = () => {
   );
 };
 
-const InfoIcon = on => {
+const InfoIcon = (on) => {
   return (
     <div style={{ cursor: "pointer" }}>
       {on && (
@@ -231,7 +198,7 @@ const InfoIcon = on => {
           viewBox="-2 -1.5 24 24"
           style={{
             flex: "0 0 40px",
-            borderLeft: "1px solid var(--foreground-color)"
+            borderLeft: "1px solid var(--foreground-color)",
           }}
         >
           <path

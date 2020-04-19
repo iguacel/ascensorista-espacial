@@ -4,7 +4,6 @@
 
 export const array = n => new Array(n).fill(0).map((d, i) => i);
 
-
 // Shuffle
 export const shuffle = arr => {
   let tmpArray = [...arr]; // create a copy of original array
@@ -57,7 +56,18 @@ export const normalizeBetweenTwoRanges = (
 // Usage
 // const res = normalizeBetweenTwoRanges(10, 0, 10, 0, 1);
 
-
+export const truncate = (text, limit) => {
+  if (text.length > limit) {
+    for (let i = limit; i > 0; i--) {
+      if (text.charAt(i) === ' ' && (text.charAt(i - 1) !== ',' || text.charAt(i - 1) !== '.' || text.charAt(i - 1) !== ';')) {
+        return text.substring(0, i) + '...';
+      }
+    }
+    return text.substring(0, limit) + '...';
+  }
+  else
+    return text;
+};
 
 export const clamp = (a, min, max) => (a < min ? min : a > max ? max : a);
 

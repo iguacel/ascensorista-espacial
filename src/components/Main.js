@@ -1,6 +1,4 @@
 import React from "react";
-import useMeasure from "react-use-measure";
-import { ResizeObserver } from "@juggle/resize-observer";
 import { Link } from "react-router-dom";
 import useSound from "use-sound";
 
@@ -9,12 +7,17 @@ import { volume } from "./sound/volume";
 
 import index from "../exp/index.js";
 
-export default () => {
-  const [ref, bounds] = useMeasure({ scroll: true, polyfill: ResizeObserver });
+import Footer from "./main/Footer";
+import Header from "./main/Header";
+import Image from "./main/Image";
 
+import "./main/style.css";
+
+export default () => {
   return (
     <>
       <div
+        className="main"
         style={{
           maxWidth: "900px",
           margin: "0 auto",
@@ -62,8 +65,9 @@ const Previa = ({ data, ultimo }) => {
 
   return (
     <div
+      className="main"
       style={{
-        borderTop: "1px solid var(--foreground-color)",
+        borderTop: "1px solid var(--gray)",
         flexBasis: "49%",
         marginBottom: "1.5em",
         position: "relative",
@@ -76,16 +80,18 @@ const Previa = ({ data, ultimo }) => {
         }}
         to={`/exp/${data.index}`}
       >
-        <img
-          src="https://picsum.photos/id/237/400/250"
-          alt=""
-          style={{ width: "100%" }}
-        />
-        <h2 className="h3" style={{ marginTop: "0.2em", maxWidth: "90%" }}>
+
+        <Image data={data} />
+
+        <p
+          style={{
+            marginTop: "0.2em",
+            maxWidth: "90%",
+            fontWeight: "700",
+            marginBottom: "var(--baseline)",
+          }}
+        >
           {data.title}
-        </h2>
-        <p className="small" style={{ fontWeight: 400 }}>
-          {data.date}
         </p>
 
         <h5
@@ -98,7 +104,10 @@ const Previa = ({ data, ultimo }) => {
             padding: "0 .5em",
             color: "#fff",
             textTransform: "uppercase",
-            background: "var(--red)"
+            background: "var(--foreground-color)",
+            fontSize: "0.8em",
+            letterSpacing: "0.1em",
+            opacity: 0.8,
           }}
         >
           {ultimo ? "Último" : ""}
@@ -114,9 +123,9 @@ const Destacado = ({ data }) => {
   return (
     <div
       style={{
-        borderTop: "1px solid var(--foreground-color)",
+        borderTop: "1px solid var(--gray)",
         flexBasis: "49%",
-        marginBottom: "1.5em",
+        marginBottom: "2em",
       }}
     >
       <Link
@@ -126,50 +135,12 @@ const Destacado = ({ data }) => {
         }}
         to={`/exp/${data.index}`}
       >
-        <img
-          src="https://picsum.photos/id/237/800/400"
-          alt=""
-          style={{ width: "100%" }}
-        />
+        <Image data={data} large={true} />
+
         <h1 className="h2" style={{ marginTop: "0.2em", maxWidth: "90%" }}>
           {data.title}
         </h1>
-        <p className="small" style={{ fontWeight: 400 }}>
-          {data.date}
-        </p>
       </Link>
     </div>
   );
 };
-
-function Header(props) {
-  return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginBottom: "2em",
-        paddingTop: "2em",
-        borderTop: "2px solid var(--foreground-color)",
-      }}
-    >
-      <a href="https://iguacel.github.io/ascensorista-espacial/"><h1>Prod</h1></a>
-
-    </div>
-  );
-}
-
-function Footer(props) {
-  return (
-    <div
-      style={{
-        borderTop: "1px solid var(--foreground-color)",
-        margin: "1em 0 1em 0",
-        padding: "1em 0 1em 0",
-      }}
-    >
-      <h6>Footer</h6>
-    </div>
-  );
-}
