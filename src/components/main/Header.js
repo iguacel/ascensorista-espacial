@@ -21,7 +21,7 @@ export default () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
-              padding: "1em 1em 1em 1em",
+              padding: "1.5em",
             }}
           >
             <Logo />
@@ -30,18 +30,11 @@ export default () => {
             </p>
           </div>
         </div>
-
-
         <div
           className="sharer"
-          style={{ width: "50%", marginLeft: "auto", paddingTop: ".5em" }}
+          style={{ fontSize: "0.8em", width: "120px", marginLeft: "auto", paddingTop: ".5em", background: "gold" }}
         >
-          <h6 style={{
-            fontWeight: 400, letterSpacing: "0.05em", fontSize: "0.65em",
-          }}>
-            COMPARTE
-        </h6>
-        face - twitter - whatsapp - telegram
+          face - twitter - whatsapp - telegram
         </div>
       </header>
     </>
