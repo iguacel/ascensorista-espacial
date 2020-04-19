@@ -107,7 +107,6 @@ const Previa = ({ data, ultimo }) => {
             background: "var(--foreground-color)",
             fontSize: "0.8em",
             letterSpacing: "0.1em",
-            opacity: 0.8,
           }}
         >
           {ultimo ? "Último" : ""}

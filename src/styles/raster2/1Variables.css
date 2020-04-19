@@ -23,7 +23,7 @@ Variables
   --max-width: 100%;
 
   --sansFont: "Inter";
-  --monoFont: "iaw-mono"; /* "IBM Plex Mono" */
+  /* --monoFont: "iaw-mono"; "IBM Plex Mono" */
 
   /* line height is the basis for vertical spacing */
   --lineHeight: calc(var(--fontSize) * 1.5);
@@ -69,12 +69,12 @@ Variables
   --yellow: rgb(249, 191, 15);
   --gray: RGBA(219, 231, 229, 1.00);
 }
-@supports (font-variation-settings: normal) {
+/* @supports (font-variation-settings: normal) {
   :root {
     --sansFont: "Inter var";
     --monoFont: "iaw-mono-var";
   }
-}
+} */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 1.5dppx) {
