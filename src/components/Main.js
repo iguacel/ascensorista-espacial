@@ -102,9 +102,8 @@ const Previa = ({ data, ultimo }) => {
             right: "0",
             margin: "0",
             padding: "0 .5em",
-            color: "#fff",
             textTransform: "uppercase",
-            background: "var(--foreground-color)",
+            background: "var(--yellow)",
             fontSize: "0.8em",
             letterSpacing: "0.1em",
           }}

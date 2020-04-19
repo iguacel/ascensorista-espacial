@@ -46,7 +46,7 @@ export default () => {
               style={{
                 fontWeight: 400,
                 letterSpacing: "0.05em",
-                fontSize: "0.75em",
+                fontSize: "0.8em",
                 textTransform: "uppercase",
                 lineHeight: "1.6em",
               }}

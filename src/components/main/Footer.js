@@ -16,13 +16,13 @@ export default () => {
         }}
       >
         <h6 style={{
-          fontWeight: 400, letterSpacing: "0.05em", fontSize: "0.65em",
+          fontWeight: 400, letterSpacing: "0.05em", fontSize: "0.8em",
         }}>
           THE PILOT DOG
         </h6>
 
         <h6 style={{
-          fontWeight: 400, letterSpacing: "0.05em", fontSize: "0.65em",
+          fontWeight: 400, letterSpacing: "0.05em", fontSize: "0.8em",
         }}>
           <a
             href="https://calvichis.com/"
