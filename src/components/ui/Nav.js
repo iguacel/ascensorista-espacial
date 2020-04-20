@@ -16,7 +16,6 @@ import Follow from "../main/Follow";
 
 import { truncate } from "../../utils/utils";
 
-
 const Nav = () => {
   let { pathname } = useLocation();
   let currentPage = +pathname.split("/")[2];
@@ -76,7 +75,7 @@ const Accordion = ({ currentPage, title, info, date }) => {
           }}
         >
           <h1 style={{ fontSize: "1.2em", lineHeight: "1.2em" }}>
-            {truncate(title, 26)}
+            {truncate(title, 20)}
           </h1>
         </div>
 
@@ -96,7 +95,9 @@ const Accordion = ({ currentPage, title, info, date }) => {
               playClick();
             }}
             to={
-              currentPage === 1 ? `/exp/${NUM}` : `/exp/${(currentPage - 1) % NUM}`
+              currentPage === 1
+                ? `/exp/${NUM}`
+                : `/exp/${(currentPage - 1) % NUM}`
             }
           >
             <PrevIcon />
@@ -109,7 +110,9 @@ const Accordion = ({ currentPage, title, info, date }) => {
               playClick();
             }}
             to={
-              currentPage === NUM - 1 ? `/exp/1` : `/exp/${(currentPage + 1) % NUM}`
+              currentPage === NUM - 1
+                ? `/exp/1`
+                : `/exp/${(currentPage + 1) % NUM}`
             }
           >
             {" "}

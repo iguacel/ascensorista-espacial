@@ -51,6 +51,11 @@
 	transition-delay: 100ms;
 }
 
+.burguer-wrapper:hover > .navSquares {
+	background: var(--foreground-color);
+	border: 1px solid var(--background-color);
+}
+
 @media (max-width: 440px) {
 	.burguer-wrapper,
 	.modal {
