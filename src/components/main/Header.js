@@ -11,6 +11,7 @@ export default () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            pointerEvents: "none"
           }}
         >
           <Logo />

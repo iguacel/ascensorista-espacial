@@ -21,7 +21,7 @@ export default () => {
         flexDirection: "column",
         justifyContent: "space-between",
         padding: "1.5em",
-        willChange: "transform"
+        willChange: "transform",
       }}
     >
       <div

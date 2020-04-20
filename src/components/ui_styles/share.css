@@ -12,8 +12,6 @@
 	width: 32px;
 	height: 34px;
   cursor: pointer;
-
-
 }
 
 .share-wrapper>a {
@@ -44,14 +42,6 @@
 	width: 30px;
 	border: 1px solid var(--foreground-color);
 	box-sizing: content-box
-}
-
-@media (max-width: 440px) {
-	.share-wrapper,
-	.modal {
-		top: 20px;
-		right: 20px;
-	}
 }
 
 .name {

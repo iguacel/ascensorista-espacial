@@ -15,7 +15,7 @@ const Ui = () => {
   return (
     <div>
       {isExp && <Burguer />}
-      {/* {isExp && <Share />} */}
+      {isExp && <Share />}
       {isExp && <Nav />}
     </div>
   );
