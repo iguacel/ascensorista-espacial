@@ -13,21 +13,7 @@ export default () => {
             justifyContent: "space-between",
           }}
         >
-          <div
-            className="logo"
-            style={{
-              background: "#493745",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              padding: "1.5em",
-            }}
-          >
-            <Logo />
-            <p style={{ color: "white", fontSize: "2em", fontWeight: 700 }}>
-              # 1
-            </p>
-          </div>
+          <Logo />
         </div>
         <div
           className="cabecera"

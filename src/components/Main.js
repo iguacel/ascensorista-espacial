@@ -68,7 +68,7 @@ const Previa = ({ data, ultimo }) => {
       className="main"
       style={{
         borderTop: "1px solid var(--gray)",
-        flexBasis: "49%",
+        flexBasis: "48.5%",
         marginBottom: "1.5em",
         position: "relative",
       }}
@@ -138,6 +138,7 @@ const Destacado = ({ data }) => {
         <h1 className="h2" style={{ marginTop: "0.2em", maxWidth: "90%" }}>
           {data.title}
         </h1>
+        {data.info}
       </Link>
     </div>
   );

@@ -10,14 +10,12 @@ import { volume } from "../sound/volume";
 import clickSound from "../sound/click.mp3";
 import infoSound from "../sound/info.mp3";
 // Index
-import index from "../../exp/index.js";
+import index, { NUM } from "../../exp/index.js";
 
 import Follow from "../main/Follow";
 
 import { truncate } from "../../utils/utils";
 
-// const n = Object.keys(index).length;
-const n = 5;
 
 const Nav = () => {
   let { pathname } = useLocation();
@@ -26,7 +24,7 @@ const Nav = () => {
   let title =
     index[pageId] && index[pageId].title
       ? index[pageId].title
-      : `${currentPage} / ${n}`;
+      : `${currentPage} / ${NUM}`;
   let info = index[pageId] && index[pageId].info;
   let date = index[pageId] && index[pageId].date;
 
@@ -98,7 +96,7 @@ const Accordion = ({ currentPage, title, info, date }) => {
               playClick();
             }}
             to={
-              currentPage === 1 ? `/exp/${n}` : `/exp/${(currentPage - 1) % n}`
+              currentPage === 1 ? `/exp/${NUM}` : `/exp/${(currentPage - 1) % NUM}`
             }
           >
             <PrevIcon />
@@ -111,7 +109,7 @@ const Accordion = ({ currentPage, title, info, date }) => {
               playClick();
             }}
             to={
-              currentPage === n - 1 ? `/exp/1` : `/exp/${(currentPage + 1) % n}`
+              currentPage === NUM - 1 ? `/exp/1` : `/exp/${(currentPage + 1) % NUM}`
             }
           >
             {" "}

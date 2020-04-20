@@ -130,6 +130,26 @@ export const fetchJSON = async (uri) => {
 };
 
 
+/**
+ * Strings
+ */
+
+export const capFirst = string =>
+  string.charAt(0).toUpperCase() + string.slice(1);
+
+export const randomString = () => (Math.random() + 1).toString(36).substring(7);
+
+// Format date text
+export const formatDateText = (date) => {
+  let options = { weekday: 'long', month: 'long', day: 'numeric' };
+
+  return capFirst(new Date(date).toLocaleString('es-ES', options));
+}
+
+// Format date
+export const formatDate = (date) => {
+  return new Date(date).toLocaleString('es-ES', { date }).split(" ")[0];
+}
 
 // THREE
 
@@ -142,3 +162,4 @@ export const hexToRgbTree = (hex) => {
     b: parseInt(result[3], 16) / 255
   } : null;
 }
+

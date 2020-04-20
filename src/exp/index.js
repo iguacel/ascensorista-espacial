@@ -1,12 +1,16 @@
 import React from "react";
 
+export const NUM = 5;
+
 export default {
   exp_1: {
     id: "exp_1",
     index: 1,
     destacado: false,
+    epi: "Último",
     title: "Test",
-    date: "15-04-2020",
+    date: "2020-05-25",
+    creditos: "Francisco Asencio, JJ",
     info: (
       <p>
         Dibujo: {" "}
@@ -25,8 +29,10 @@ export default {
     id: "exp_2",
     index: 2,
     destacado: true,
+    epi: "Último",
     title: "El ascensorista espacial",
-    date: "20-04-2020",
+    date: "2020-05-25",
+    creditos: "Francisco Asencio, JJ",
     info: (
       <p>
         Dibujo: {" "}
@@ -45,8 +51,10 @@ export default {
     id: "exp_3",
     index: 3,
     destacado: false,
+    epi: "Último",
     title: "Tercera",
-    date: "20-04-2020",
+    date: "2020-05-25",
+    creditos: "Francisco Asencio, JJ",
     info: (
       <p>
         Créditos.
@@ -57,8 +65,10 @@ export default {
     id: "exp_4",
     index: 4,
     destacado: false,
+    epi: "Último",
     title: "Cuarto título larguísimo para pruebas en main",
-    date: "25-04-2020",
+    date: "2020-05-25",
+    creditos: "Francisco Asencio, JJ",
     info: (
       <p>
         Créditos.
@@ -69,8 +79,10 @@ export default {
     id: "exp_5",
     index: 5,
     destacado: false,
+    epi: "Último",
     title: "Quinto título larguísimo para pruebas en main",
-    date: "25-05-2020",
+    date: "2020-05-25",
+    creditos: "Francisco Asencio, JJ",
     info: (
       <p>
         Créditos.
