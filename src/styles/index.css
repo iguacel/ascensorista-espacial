@@ -1,4 +1,7 @@
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 * {
-  /* border: 1px solid pink; */
   transition: color, background, background-color 200ms ease-in;
 }
