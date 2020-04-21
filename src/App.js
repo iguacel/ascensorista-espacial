@@ -18,7 +18,6 @@ const Exp4 = lazy(() => import("./exp/Exp4"));
 const Exp5 = lazy(() => import("./exp/Exp5"));
 
 const App = () => {
-
   return (
     <div>
       <Router>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => {
   return (
-    <p className="small" style={{ maxWidth: "80%", marginTop: "-1em" }}><strong>Síguenos</strong> en {" "}
+    <p className="small" style={{ maxWidth: "80%", marginTop: "-1em", lineHeight: "1.5em" }}><strong>Síguenos</strong> en {" "}
       <a
         href="https://es-es.facebook.com/camisetascalvichi"
         target="_blank"

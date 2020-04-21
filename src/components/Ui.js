@@ -2,7 +2,6 @@ import React from 'react';
 
 import Burguer from "../components/ui/Burguer";
 import Nav from "../components/ui/Nav";
-import Share from "../components/ui/Share";
 
 import {
   useLocation,
@@ -15,7 +14,6 @@ const Ui = () => {
   return (
     <div>
       {isExp && <Burguer />}
-      {isExp && <Share />}
       {isExp && <Nav />}
     </div>
   );
