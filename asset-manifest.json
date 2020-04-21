@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.e1c5a047.chunk.js": "/ascensorista-espacial/static/js/0.e1c5a047.chunk.js",
     "static/js/0.e1c5a047.chunk.js.map": "/ascensorista-espacial/static/js/0.e1c5a047.chunk.js.map",
-    "main.css": "/ascensorista-espacial/static/css/main.ab71d9aa.chunk.css",
+    "main.css": "/ascensorista-espacial/static/css/main.8b25e0b8.chunk.css",
     "main.js": "/ascensorista-espacial/static/js/main.870c4f6e.chunk.js",
     "main.js.map": "/ascensorista-espacial/static/js/main.870c4f6e.chunk.js.map",
     "runtime-main.js": "/ascensorista-espacial/static/js/runtime-main.9efb6017.js",
@@ -27,12 +27,12 @@
     "static/js/10.b40f7433.chunk.js": "/ascensorista-espacial/static/js/10.b40f7433.chunk.js",
     "static/js/10.b40f7433.chunk.js.map": "/ascensorista-espacial/static/js/10.b40f7433.chunk.js.map",
     "index.html": "/ascensorista-espacial/index.html",
-    "precache-manifest.62c43e5cab6943c048053a360171a993.js": "/ascensorista-espacial/precache-manifest.62c43e5cab6943c048053a360171a993.js",
+    "precache-manifest.1962945c7b0812d6b4edb36f89d8e141.js": "/ascensorista-espacial/precache-manifest.1962945c7b0812d6b4edb36f89d8e141.js",
     "service-worker.js": "/ascensorista-espacial/service-worker.js",
     "static/css/4.a051f53f.chunk.css.map": "/ascensorista-espacial/static/css/4.a051f53f.chunk.css.map",
     "static/css/5.8a09985a.chunk.css.map": "/ascensorista-espacial/static/css/5.8a09985a.chunk.css.map",
     "static/css/6.c195c81b.chunk.css.map": "/ascensorista-espacial/static/css/6.c195c81b.chunk.css.map",
-    "static/css/main.ab71d9aa.chunk.css.map": "/ascensorista-espacial/static/css/main.ab71d9aa.chunk.css.map",
+    "static/css/main.8b25e0b8.chunk.css.map": "/ascensorista-espacial/static/css/main.8b25e0b8.chunk.css.map",
     "static/js/10.b40f7433.chunk.js.LICENSE.txt": "/ascensorista-espacial/static/js/10.b40f7433.chunk.js.LICENSE.txt",
     "static/js/3.2d5b0e14.chunk.js.LICENSE.txt": "/ascensorista-espacial/static/js/3.2d5b0e14.chunk.js.LICENSE.txt",
     "static/media/burguer.mp3": "/ascensorista-espacial/static/media/burguer.b3d490aa.mp3",
@@ -43,7 +43,7 @@
   "entrypoints": [
     "static/js/runtime-main.9efb6017.js",
     "static/js/3.2d5b0e14.chunk.js",
-    "static/css/main.ab71d9aa.chunk.css",
+    "static/css/main.8b25e0b8.chunk.css",
     "static/js/main.870c4f6e.chunk.js"
   ]
 }
