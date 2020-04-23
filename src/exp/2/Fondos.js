@@ -21,7 +21,7 @@ export default ({ index, data, windowHeight }) => {
       >
         <div className="star comet"></div>
 
-        <img
+        {/* <img
           className="rotate"
           style={{
             position: "absolute",
@@ -34,7 +34,7 @@ export default ({ index, data, windowHeight }) => {
           src="./img/2/fondos/satellite3.svg"
           width="120px"
           alt=""
-        />
+        /> */}
 
         <img
           className="floatingSat"

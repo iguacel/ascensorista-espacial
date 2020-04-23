@@ -15,7 +15,7 @@ function Ascensor({ data, index, windowHeight }) {
         position: isSafari ? "-webkit-sticky" : "sticky",
         top: 0,
         zIndex: 2,
-        border: "1px solid gold",
+        // border: "1px solid gold",
       }}
     >
       <div className="ascensor" style={{ position: "relative" }}>

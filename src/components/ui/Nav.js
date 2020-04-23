@@ -97,7 +97,7 @@ const Accordion = ({ currentPage, title, info, date }) => {
             to={
               currentPage === 1
                 ? `/exp/${NUM}`
-                : `/exp/${(currentPage - 1) % NUM}`
+                : `/exp/${currentPage - 1}`
             }
           >
             <PrevIcon />
@@ -110,9 +110,9 @@ const Accordion = ({ currentPage, title, info, date }) => {
               playClick();
             }}
             to={
-              currentPage === NUM - 1
+              currentPage === NUM
                 ? `/exp/1`
-                : `/exp/${(currentPage + 1) % NUM}`
+                : `/exp/${currentPage + 1}`
             }
           >
             {" "}

@@ -13,7 +13,7 @@ export default function ({ onEnter, data, windowHeight }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        border: "1px solid pink",
+        // border: "1px solid pink",
         // background: `url(./img/2/bg/${data.index}.png)`,
         // backgroundSize: "cover",
         // backgroundRepeat: "no-repeat",
@@ -67,7 +67,7 @@ export default function ({ onEnter, data, windowHeight }) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            border: "1px solid cyan",
+            // border: "1px solid cyan",
             zIndex: "2",
           }}
         >
