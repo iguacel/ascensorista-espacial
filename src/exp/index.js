@@ -6,9 +6,9 @@ export default {
   exp_1: {
     id: "exp_1",
     index: 1,
-    destacado: false,
+    destacado: true,
     epi: "Último",
-    title: "Test",
+    title: "El ascensorista espacial",
     date: "2020-05-25",
     creditos: "Francisco Asencio, JJ",
     info: (
@@ -28,7 +28,7 @@ export default {
   exp_2: {
     id: "exp_2",
     index: 2,
-    destacado: true,
+    destacado: false,
     epi: "Último",
     title: "El ascensorista espacial",
     date: "2020-05-25",

@@ -36,7 +36,9 @@ export default ({ index, data, windowHeight }) => {
           alt=""
         /> */}
 
-        <img
+
+        {/* SATELLITE */}
+        {/* <img
           className="floatingSat"
           style={{
             position: "absolute",
@@ -46,14 +48,15 @@ export default ({ index, data, windowHeight }) => {
             transform: `translate(0, ${bounds.top / 5}px)`,
             zIndex: 3,
           }}
-          src="./img/2/fondos/satellite4.svg"
+          src="./img/1/fondos/satellite4.svg"
           width="120px"
           alt=""
-        />
+        /> */}
 
         <Altura index={index} bounds={bounds} data={data} />
 
-        <FullSvg bounds={bounds} windowHeight={windowHeight} />
+        {/* FULLSVG */}
+        {/* <FullSvg bounds={bounds} windowHeight={windowHeight} /> */}
       </div>
     </>
   );

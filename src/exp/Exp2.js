@@ -1,11 +1,11 @@
 import React, { Fragment, useState } from "react";
 import { useWindowHeight } from "@react-hook/window-size/throttled";
 
-import WayPoint from "./2/WayPoint";
-import Ascensor from "./2/Ascensor";
-import Fondos from "./2/Fondos";
-import data from "./2/data";
-import "./2/style.css";
+import WayPoint from "./1/WayPoint";
+import Ascensor from "./1/Ascensor";
+import Fondos from "./1/Fondos";
+import data from "./1/data";
+import "./1/style.css";
 
 export default function () {
   const [index, setIndex] = useState(0);
