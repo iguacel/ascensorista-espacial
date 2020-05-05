@@ -24,7 +24,7 @@ export default ({ index, data, windowHeight }) => {
         <img
           style={{
             position: "absolute",
-            top: `${windowHeight * 1.3}px`,
+            top: `${windowHeight * 1.6}px`,
             left: `${bounds.width / 2 - 350}px`,
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",

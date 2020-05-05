@@ -49,7 +49,7 @@ function FullSvg({ bounds, windowHeight }) {
         </filter> */}
 
 
-        <linearGradient id="OrangeRed" x1={0} y1={0} x2={0} y2={1} gradientTransform="rotate(25)"><stop offset="0%" stopColor="#FCE38A" stopOpacity={1} /><stop offset="100%" stopColor="#F38181" stopOpacity={1} /></linearGradient>
+        {/* <linearGradient id="OrangeRed" x1={0} y1={0} x2={0} y2={1} gradientTransform="rotate(25)"><stop offset="0%" stopColor="#FCE38A" stopOpacity={1} /><stop offset="100%" stopColor="#F38181" stopOpacity={1} /></linearGradient> */}
 
 
         <circle cx={bounds.width - 160} cy={280} r="20" fill="RGBA(189, 193, 199, 1)" />
