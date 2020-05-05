@@ -61,7 +61,7 @@ export default ({ index, data, windowHeight }) => {
           style={{
             position: "absolute",
             top: `${windowHeight * 3.4}px`,
-            left: `${bounds.width / 3 - 20}px`,
+            left: `${bounds.width / 3 - 260}px`,
             bottom: 0,
             zIndex: 0,
             transform: `translate(0, ${bounds.top / 2}px)`,
