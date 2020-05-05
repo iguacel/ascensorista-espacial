@@ -55,6 +55,62 @@ export default ({ index, data, windowHeight }) => {
           alt=""
         />
 
+        {/* NUBES */}
+
+        <img
+          style={{
+            position: "absolute",
+            top: `${windowHeight * 3.4}px`,
+            left: `${bounds.width / 3 - 20}px`,
+            bottom: 0,
+            zIndex: 0,
+            transform: `translate(0, ${bounds.top / 2}px)`,
+            transformOrigin: "50% 50%",
+            zIndex: 0
+          }}
+          src="./img/1/fondos/nube.png"
+          width="700px"
+          height="200px"
+          alt=""
+        />
+
+        {/* NUBES */}
+
+        <img
+          style={{
+            position: "absolute",
+            top: `${windowHeight * 4.4}px`,
+            left: `${bounds.width / 3 - 20}px`,
+            bottom: 0,
+            zIndex: 0,
+            transform: `translate(0, ${bounds.top / 2}px)`,
+            transformOrigin: "50% 50%",
+            zIndex: 0
+          }}
+          src="./img/1/fondos/nube1.png"
+          width="600px"
+          height="124px"
+          alt=""
+        />
+
+
+        <img
+          style={{
+            position: "absolute",
+            top: `${windowHeight * 5.2}px`,
+            left: `${bounds.width / 3 - 160}px`,
+            bottom: 0,
+            zIndex: 0,
+            transform: `translate(0, ${bounds.top / 2}px)`,
+            transformOrigin: "50% 50%",
+            zIndex: 0
+          }}
+          src="./img/1/fondos/nube4.png"
+          width="201px"
+          height="85px"
+          alt=""
+        />
+
         <Altura index={index} bounds={bounds} data={data} />
 
         {/* FULLSVG */}
