@@ -6,19 +6,24 @@ function Ascensor({ data, index, windowHeight }) {
     <>
       <div style={{ display: "none" }}>
         <img
-          src={`./img/1/ascensor/0.png`}
+          src={`./img/1/ascensor/0.png`} alt=""
+
         />
         <img
-          src={`./img/1/ascensor/1.png`}
+          src={`./img/1/ascensor/1.png`} alt=""
+
         />
         <img
-          src={`./img/1/ascensor/2.png`}
+          src={`./img/1/ascensor/2.png`} alt=""
+
         />
         <img
-          src={`./img/1/ascensor/3.png`}
+          src={`./img/1/ascensor/3.png`} alt=""
+
         />
         <img
-          src={`./img/1/ascensor/4.png`}
+          src={`./img/1/ascensor/4.png`} alt=""
+
         />
 
       </div>

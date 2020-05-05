@@ -26,7 +26,6 @@ export default ({ index, data, windowHeight }) => {
             position: "absolute",
             top: `${windowHeight * 1.3}px`,
             left: `${bounds.width / 2 - 350}px`,
-            zIndex: 0,
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",
             zIndex: 2
@@ -47,7 +46,6 @@ export default ({ index, data, windowHeight }) => {
             zIndex: 0,
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",
-            zIndex: 0
           }}
           src="./img/1/fondos/satellite.png"
           width="330px"
@@ -66,7 +64,6 @@ export default ({ index, data, windowHeight }) => {
             zIndex: 0,
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",
-            zIndex: 0
           }}
           src="./img/1/fondos/nube.png"
           width="700px"
@@ -85,7 +82,6 @@ export default ({ index, data, windowHeight }) => {
             zIndex: 0,
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",
-            zIndex: 0
           }}
           src="./img/1/fondos/nube1.png"
           width="600px"
@@ -103,7 +99,6 @@ export default ({ index, data, windowHeight }) => {
             zIndex: 0,
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",
-            zIndex: 0
           }}
           src="./img/1/fondos/nube4.png"
           width="201px"

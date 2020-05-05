@@ -22,7 +22,7 @@ const randomStars = (width, height, n = 0) => {
 function FullSvg({ bounds, windowHeight }) {
   const stars = useMemo(
     () => randomStars(bounds.width, 2000, Math.floor(bounds.width / 4)),
-    [bounds.width, windowHeight]
+    [bounds.width]
   );
 
   const margin = 140;
