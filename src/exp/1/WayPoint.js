@@ -79,7 +79,7 @@ export default function ({ onEnter, data, windowHeight }) {
               padding: "1em",
               border: "1px solid var(--foreground-color)",
               textAlign: "center",
-              maxWidth: "250px"
+              maxWidth: "250px",
             }}
           >
             {data.texto}
