@@ -1,19 +1,18 @@
 import React, { useMemo } from "react";
-import { randomInt, random } from "../../utils/utils";
+import { randomInt } from "../../utils/utils";
 
-const randomStars = (width, height, n = 100) => {
+const randomStars = (width, height, n = 0) => {
   return new Array(n).fill().map((_, i) => {
     return (
       <circle
-        className={"flicker"}
+        className="flicker"
         key={`star${i}`}
         cx={randomInt(0, width)}
         cy={randomInt(0, height)}
         r={randomInt(2, 4)}
-        fill={`RGBA(255, 255, 255, ${random(0.2, 1)}`}
         style={{
           animationDelay: `${randomInt(0, 1200)}ms`,
-          animationDuration: `${randomInt(1, 6)}s`,
+          animationDuration: `${randomInt(1, 20)}s`,
         }}
       />
     );
@@ -22,37 +21,82 @@ const randomStars = (width, height, n = 100) => {
 
 function FullSvg({ bounds, windowHeight }) {
   const stars = useMemo(
-    () =>
-      randomStars(bounds.width, windowHeight * 2, Math.floor(bounds.width / 4)),
+    () => randomStars(bounds.width, 2000, Math.floor(bounds.width / 4)),
     [bounds.width, windowHeight]
   );
 
-  const margin = 130;
-  const color = "RGBA(219, 231, 229, 0.80)";
+  const margin = 140;
+  const start = bounds.height / 6.33;
+  const colors = {
+    gris: "#D9DADA",
+    dark: "#9F9F9E"
+  };
 
   return (
-    <div className="svg" style={{ width: "100%", height: "100%", zIndex: 0 }}>
+    <div className="svg" style={{ width: "100%", height: "100%" }}>
       <svg
-        style={{ margin: "0 auto", overflow: "visible" }}
+        style={{ overflow: "hidden" }}
         viewBox={`0 0 ${bounds.width} ${bounds.height}`}
       >
+        {stars}
+
+
+
+        {/* SHADOW */}
+        <line
+          x1={bounds.width / 2 + margin + 5}
+          y1={start}
+          x2={bounds.width / 2 + margin + 5}
+          y2={bounds.height - 300}
+          style={{ strokeWidth: 12 }}
+          stroke={colors.dark}
+        />
+
+        <line
+          x1={bounds.width / 2 - margin + 5}
+          y1={start}
+          x2={bounds.width / 2 - margin + 5}
+          y2={bounds.height - 300}
+          style={{
+            strokeWidth: 12,
+          }}
+          stroke={colors.dark}
+        />
+
+        {/* CLARO */}
         <line
           x1={bounds.width / 2 + margin}
-          y1={windowHeight - windowHeight / 6.9}
+          y1={start}
           x2={bounds.width / 2 + margin}
           y2={bounds.height - 300}
-          style={{ stroke: color, strokeWidth: 12 }}
+          style={{ strokeWidth: 12 }}
+          stroke={colors.gris}
         />
 
         <line
           x1={bounds.width / 2 - margin}
-          y1={windowHeight - windowHeight / 6.9}
+          y1={start}
           x2={bounds.width / 2 - margin}
           y2={bounds.height - 300}
-          style={{ stroke: color, strokeWidth: 12 }}
+          style={{
+            strokeWidth: 12,
+          }}
+          stroke={colors.gris}
         />
 
-        {stars}
+
+        {/* TOP */}
+        <line
+          x1={0}
+          y1={start}
+          x2={bounds.width}
+          y2={start}
+          style={{
+            strokeWidth: 12,
+          }}
+          stroke={colors.gris}
+        />
+
       </svg>
     </div>
   );

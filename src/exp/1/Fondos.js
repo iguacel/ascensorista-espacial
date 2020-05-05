@@ -21,7 +21,7 @@ export default ({ index, data, windowHeight }) => {
       >
         <div className="star comet"></div>
 
-        {/* <img
+        <img
           className="rotate"
           style={{
             position: "absolute",
@@ -31,14 +31,14 @@ export default ({ index, data, windowHeight }) => {
             transform: `translate(0, ${bounds.top / 2}px) scaleX(-1)`,
             transformOrigin: "50% 50%",
           }}
-          src="./img/2/fondos/satellite3.svg"
+          src="./img/1/fondos/satellite3.svg"
           width="120px"
+          height="120px"
           alt=""
-        /> */}
-
+        />
 
         {/* SATELLITE */}
-        {/* <img
+        <img
           className="floatingSat"
           style={{
             position: "absolute",
@@ -50,13 +50,25 @@ export default ({ index, data, windowHeight }) => {
           }}
           src="./img/1/fondos/satellite4.svg"
           width="120px"
+          height="120px"
           alt=""
-        /> */}
+        />
 
         <Altura index={index} bounds={bounds} data={data} />
 
         {/* FULLSVG */}
-        {/* <FullSvg bounds={bounds} windowHeight={windowHeight} /> */}
+
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            right: 0,
+            width: `${bounds.width}px`,
+            height: `${bounds.height}px`,
+          }}
+        >
+          <FullSvg bounds={bounds} windowHeight={windowHeight} />
+        </div>
       </div>
     </>
   );

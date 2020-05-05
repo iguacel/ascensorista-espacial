@@ -97,27 +97,14 @@ export default function () {
         </div>
 
         <div
-          className="final"
+          className="suelo"
           style={{
-            color: "white",
-            position: "relative",
-            background: "RGBA(243, 208, 166, 1.00)",
+            background:
+              "linear-gradient(to bottom, #A0A9A4 0%, #B0A89E 100%)",
+            marginTop: "-220px",
+            height: "290px",
           }}
-        >
-          <div
-            className="texto"
-            style={{
-              maxWidth: "900px",
-              margin: "0 auto",
-              padding: "2em 0 8em 0",
-              textAlign: "center",
-              color: "var(--foreground-color)",
-            }}
-          >
-            <h3>Estación Caleta</h3>
-            <p>Final del trayecto</p>
-          </div>
-        </div>
+        ></div>
       </div>
     </div>
   );

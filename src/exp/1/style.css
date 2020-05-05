@@ -44,10 +44,8 @@
 }
 
 .flicker {
-  animation-name: flicker;
-  animation-duration: 2000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: flicker 1200ms infinite;
+  fill: white;
 }
 
 .rotate {
@@ -66,8 +64,6 @@
   }
 }
 
-
-
 .comet {
   width: 10px;
   height: 10px;
@@ -78,6 +74,10 @@
   opacity: 0.3;
   transform: rotate(-45deg) translate(0, -50px);
   animation: comet 6s infinite;
+}
+
+.soporte {
+  box-shadow: 10px 10px 0px 10px rgba(0,0,0,1);
 }
 
 .comet:after {
@@ -124,7 +124,7 @@
 
 @keyframes flicker {
   0%    { opacity: 1;   }
-  50%   { opacity: 0.1;   }
+  50%   { opacity: 0.2;   }
   100%  { opacity: 1;   }
 }
 
