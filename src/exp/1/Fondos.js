@@ -60,7 +60,7 @@ export default ({ index, data, windowHeight }) => {
         <img
           style={{
             position: "absolute",
-            top: `${windowHeight * 3.4}px`,
+            top: `${windowHeight * 5.4}px`,
             left: `${bounds.width / 3 - 260}px`,
             bottom: 0,
             zIndex: 0,
@@ -97,7 +97,7 @@ export default ({ index, data, windowHeight }) => {
         <img
           style={{
             position: "absolute",
-            top: `${windowHeight * 5.2}px`,
+            top: `${windowHeight * 3.2}px`,
             left: `${bounds.width / 3 - 160}px`,
             bottom: 0,
             zIndex: 0,
