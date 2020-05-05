@@ -30,7 +30,7 @@ export default function () {
             style={{
               maxWidth: "900px",
               margin: "0 auto",
-              paddingTop: "80px",
+              paddingTop: "20px",
               color: "white",
               position: "relative",
             }}
@@ -38,12 +38,19 @@ export default function () {
             <div
               style={{
                 color: "white",
-                maxWidth: "450px",
+                maxWidth: "600px",
                 margin: "0 auto",
                 padding: "0 1em 0 1em",
               }}
             >
-              <h1
+
+              <img
+                src="./img/1/titulo.png"
+                alt="Luna"
+                style={{ width: "100%", margin: "1em 0 0 0" }}
+              />
+
+              {/* <h1
                 className="h2"
                 style={{ textAlign: "center", lineHeight: "1.2em" }}
               >
@@ -55,14 +62,10 @@ export default function () {
               <p style={{ marginTop: "-0.5em" }}>
                 Ese día me convertí en el primer ascensorista espacial de la
                 ciudad.
-              </p>
+              </p> */}
             </div>
-            {/*
-            <img
-              src="./img/1/luna.png"
-              alt="Luna"
-              style={{ width: "100%", margin: "1em 0 0 0" }}
-            /> */}
+
+
           </div>
 
           {/* <div
