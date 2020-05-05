@@ -76,6 +76,23 @@
   animation: comet 6s infinite;
 }
 
+.dog {
+  animation: dog 5s infinite;
+}
+
+
+@keyframes dog {
+  0% {
+    transform: translate(50vw, 0vw);
+  }
+  50% {
+    transform: translate(10vw, 200vw);
+  }
+  100% {
+    transform: translateX(30vw);
+  }
+}
+
 .soporte {
   box-shadow: 10px 10px 0px 10px rgba(0,0,0,1);
 }
@@ -109,6 +126,7 @@
     opacity: 0;
   }
 }
+
 
 @keyframes floating {
   from { transform: translate(0,  0px); }
