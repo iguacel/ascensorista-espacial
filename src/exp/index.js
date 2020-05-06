@@ -13,7 +13,7 @@ export default {
     creditos: "Francisco Asencio, JJ",
     info: (
       <p>
-        Dibujo: {" "}
+        Dibujo: JJ. Guión: {" "}
         <a
           href="https://www.instagram.com/francisco_asencio/"
           title="Francisco Asencio"
@@ -30,12 +30,12 @@ export default {
     index: 2,
     destacado: false,
     epi: "Último",
-    title: "El ascensorista espacial",
+    title: "Responsabilidad",
     date: "2020-05-25",
     creditos: "Francisco Asencio, JJ",
     info: (
       <p>
-        Dibujo: {" "}
+        Dibujo: JJ. Guión: {" "}
         <a
           href="https://www.instagram.com/francisco_asencio/"
           title="Francisco Asencio"

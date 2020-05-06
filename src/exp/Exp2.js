@@ -1,16 +1,19 @@
 import React, { Fragment, useState } from "react";
 import { useWindowHeight } from "@react-hook/window-size/throttled";
 
-import WayPoint from "./1/WayPoint";
-import Ascensor from "./1/Ascensor";
-import Fondos from "./1/Fondos";
-import data from "./1/data";
-import "./1/style.css";
+import useMeasure from "react-use-measure";
+import { ResizeObserver } from "@juggle/resize-observer";
 
+import Image from "./comp/Image";
+import WayPoint from "./2/WayPoint";
+import Ascensor from "./2/Ascensor";
+import Fondos from "./2/Fondos";
+import data from "./2/data";
+import "./2/style.css";
 export default function () {
   const [index, setIndex] = useState(0);
-
   const height = useWindowHeight();
+  const [ref, bounds] = useMeasure({ scroll: true, polyfill: ResizeObserver });
 
   const onEnter = (index) => {
     setIndex(index);
@@ -30,7 +33,7 @@ export default function () {
             style={{
               maxWidth: "900px",
               margin: "0 auto",
-              paddingTop: "80px",
+              paddingTop: "20px",
               color: "white",
               position: "relative",
             }}
@@ -38,48 +41,35 @@ export default function () {
             <div
               style={{
                 color: "white",
-                maxWidth: "450px",
+                maxWidth: "600px",
                 margin: "0 auto",
                 padding: "0 1em 0 1em",
               }}
             >
+              <Image src="./img/2/titulo.png" />
+
               <h1
-                className="h2"
-                style={{ textAlign: "center", lineHeight: "1.2em" }}
+                className="h1"
+                style={{
+                  display: "none",
+                  textAlign: "center",
+                  lineHeight: "1.2em",
+                }}
               >
                 El ascensorista espacial
               </h1>
-              <p>
-                Los viajes espaciales llegaron a Cádiz el 16 de julio de 2049.
-              </p>
-              <p style={{ marginTop: "-0.5em" }}>
-                Ese día me convertí en el primer ascensorista espacial de la
-                ciudad.
-              </p>
             </div>
-
-            <img
-              src="./img/1/luna.png"
-              alt="Luna"
-              style={{ width: "100%", margin: "1em 0 0 0" }}
-            />
           </div>
+          {/* Ascensor */}
+          <Ascensor windowHeight={height} bounds={bounds} />
 
-          <div
-            style={{
-              color: "white",
-              maxWidth: "450px",
-              margin: "0 auto",
-              padding: "2em 1em 2em 1em",
-            }}
-          >
-            <p>Durante estos años he visto de todo...</p>
-          </div>
+          <div ref={ref}
+            className="parallax" style={{ position: "relative" }}>
 
-          <Ascensor data={data} index={index} windowHeight={height} />
+            {/* Fondos */}
+            <Fondos index={index} data={data} windowHeight={height} bounds={bounds} />
 
-          <div className="parallax" style={{ position: "relative" }}>
-            <Fondos index={index} data={data} windowHeight={height} />
+            {/* Waypoint */}
             <div className="bg" style={{ marginTop: `-${height}px` }}>
               {data.map((x) => {
                 return (
@@ -97,27 +87,13 @@ export default function () {
         </div>
 
         <div
-          className="final"
+          className="suelo"
           style={{
-            color: "white",
-            position: "relative",
-            background: "RGBA(243, 208, 166, 1.00)",
+            background: "linear-gradient(to bottom, #A0A9A4 0%, #B0A89E 100%)",
+            marginTop: "-220px",
+            height: "290px",
           }}
-        >
-          <div
-            className="texto"
-            style={{
-              maxWidth: "900px",
-              margin: "0 auto",
-              padding: "2em 0 8em 0",
-              textAlign: "center",
-              color: "var(--foreground-color)",
-            }}
-          >
-            <h3>Estación Caleta</h3>
-            <p>Final del trayecto</p>
-          </div>
-        </div>
+        ></div>
       </div>
     </div>
   );
