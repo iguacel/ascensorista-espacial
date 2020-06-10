@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NUM = 5;
+export const NUM = 1;
 
 export default {
   exp_1: {
@@ -9,11 +9,11 @@ export default {
     destacado: true,
     epi: "Último",
     title: "El ascensorista espacial",
-    date: "2020-05-25",
-    creditos: "Francisco Asencio, JJ",
+    date: "2020-06-12",
+    creditos: "Francisco Asencio, J. Domínguez",
     info: (
       <p>
-        Dibujo: JJ. Guión: {" "}
+        Dibujo: J. Domínguez. Guión:{" "}
         <a
           href="https://www.instagram.com/francisco_asencio/"
           title="Francisco Asencio"
@@ -31,11 +31,11 @@ export default {
     destacado: false,
     epi: "Último",
     title: "Responsabilidad",
-    date: "2020-05-25",
-    creditos: "Francisco Asencio, JJ",
+    date: "2020-06-19",
+    creditos: "Francisco Asencio, J. Domínguez",
     info: (
       <p>
-        Dibujo: JJ. Guión: {" "}
+        Dibujo: J. Domínguez. Guión: {" "}
         <a
           href="https://www.instagram.com/francisco_asencio/"
           title="Francisco Asencio"
@@ -52,41 +52,48 @@ export default {
     index: 3,
     destacado: false,
     epi: "Último",
-    title: "Tercera",
-    date: "2020-05-25",
-    creditos: "Francisco Asencio, JJ",
+    title: "Mantenimiento",
+    date: "2020-06-26",
+    creditos: "Francisco Asencio, J. Domínguez",
     info: (
       <p>
-        Créditos.
-      </p>
-    )
+        Dibujo: J. Domínguez. Guión: {" "}
+        <a
+          href="https://www.instagram.com/francisco_asencio/"
+          title="Francisco Asencio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Francisco Asencio
+        </a>.
+      </p>)
   },
-  exp_4: {
-    id: "exp_4",
-    index: 4,
-    destacado: false,
-    epi: "Último",
-    title: "Cuarto título larguísimo para pruebas en main",
-    date: "2020-05-25",
-    creditos: "Francisco Asencio, JJ",
-    info: (
-      <p>
-        Créditos.
-      </p>
-    )
-  },
-  exp_5: {
-    id: "exp_5",
-    index: 5,
-    destacado: false,
-    epi: "Último",
-    title: "Quinto título larguísimo para pruebas en main",
-    date: "2020-05-25",
-    creditos: "Francisco Asencio, JJ",
-    info: (
-      <p>
-        Créditos.
-      </p>
-    )
-  }
+  // exp_4: {
+  //   id: "exp_4",
+  //   index: 4,
+  //   destacado: false,
+  //   epi: "Último",
+  //   title: "Cuarto título larguísimo para pruebas en main",
+  //   date: "2020-05-25",
+  //   creditos: "Francisco Asencio, JJ",
+  //   info: (
+  //     <p>
+  //       Créditos.
+  //     </p>
+  //   )
+  // },
+  // exp_5: {
+  //   id: "exp_5",
+  //   index: 5,
+  //   destacado: false,
+  //   epi: "Último",
+  //   title: "Quinto título larguísimo para pruebas en main",
+  //   date: "2020-05-25",
+  //   creditos: "Francisco Asencio, JJ",
+  //   info: (
+  //     <p>
+  //       Créditos.
+  //     </p>
+  //   )
+  // }
 };

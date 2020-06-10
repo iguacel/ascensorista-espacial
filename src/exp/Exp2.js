@@ -46,7 +46,7 @@ export default function () {
                 padding: "0 1em 0 1em",
               }}
             >
-              <Image src="./img/2/titulo.png" />
+              <Image src="./img/comun/titulo.png" />
 
               <h1
                 className="h1"

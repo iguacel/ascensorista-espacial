@@ -13,6 +13,7 @@ const NotFound = React.lazy(() => import("./components/ui/NotFound"));
 
 const Exp1 = lazy(() => import("./exp/Exp1"));
 const Exp2 = lazy(() => import("./exp/Exp2"));
+const Exp3 = lazy(() => import("./exp/Exp3"));
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route exact path="/" component={Main} />
             <Route path="/exp/1" component={Exp1} />
             <Route path="/exp/2" component={Exp2} />
+            <Route path="/exp/3" component={Exp3} />
             <Route component={NotFound} />
           </Switch>
         </Suspense>
