@@ -24,32 +24,13 @@
 
 .navSquares {
 	background: var(--background-color);
-	flex-basis: 0 10px;
-	height: 12px;
-	width: 12px;
+	height: 6px;
+	width: 100%;
 	border: 1px solid var(--foreground-color);
-	box-sizing: content-box
+	box-sizing: content-box;
+	transition: all 200ms;
 }
 
-.n1 {
-  transition: all 200ms;
-	transition-delay: 0ms;
-}
-
-.n2 {
-  transition: all 200ms;
-	transition-delay: 50ms;
-}
-
-.n3 {
-  transition: all 200ms;
-	transition-delay: 50ms;
-}
-
-.n4 {
-  transition: all 200ms;
-	transition-delay: 100ms;
-}
 
 .burguer-wrapper:hover > .navSquares {
 	background: var(--foreground-color);

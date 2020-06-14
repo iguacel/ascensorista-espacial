@@ -22,10 +22,9 @@ const Burguer = () => {
           playBurguer();
         }}
       >
-        <div className="navSquares n1"></div>
-        <div className="navSquares n2"></div>
-        <div className="navSquares n3"></div>
-        <div className="navSquares n4"></div>
+        <div className="navSquares"></div>
+        <div className="navSquares"></div>
+        <div className="navSquares"></div>
       </div>
     </Link>
   );

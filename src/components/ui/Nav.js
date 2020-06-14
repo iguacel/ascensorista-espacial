@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../ui_styles/nav.css";
 import { useSpring, animated } from "react-spring";
 import { useMeasure } from "react-use";
@@ -88,7 +88,7 @@ const Accordion = ({ currentPage, title, info, date }) => {
         >
           {date && <InfoIcon on={on} />}
         </div>
-        <div className="prevButton">
+        {/* <div className="prevButton">
           <Link
             onClick={() => {
               toggle(false);
@@ -102,8 +102,8 @@ const Accordion = ({ currentPage, title, info, date }) => {
           >
             <PrevIcon />
           </Link>
-        </div>
-        <div className="nextButton">
+        </div> */}
+        {/* <div className="nextButton">
           <Link
             onClick={() => {
               toggle(false);
@@ -118,7 +118,7 @@ const Accordion = ({ currentPage, title, info, date }) => {
             {" "}
             <NextIcon />
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* INFO PANEL */}

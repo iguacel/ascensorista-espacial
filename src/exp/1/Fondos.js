@@ -29,7 +29,7 @@ export default ({ index, data, windowHeight }) => {
             transformOrigin: "50% 50%",
             zIndex: 2
           }}
-          src="./img/1/fondos/dog.png"
+          src="./img/comun/fondos/dog.png"
           width="225px"
           height="225px"
           alt=""
@@ -46,7 +46,7 @@ export default ({ index, data, windowHeight }) => {
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",
           }}
-          src="./img/1/fondos/satellite.png"
+          src="./img/comun/fondos/satellite.png"
           width="260px"
           height="260px"
           alt=""
@@ -64,7 +64,7 @@ export default ({ index, data, windowHeight }) => {
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",
           }}
-          src="./img/1/fondos/nube.png"
+          src="./img/comun/fondos/nube.png"
           width="700px"
           height="200px"
           alt=""
@@ -82,7 +82,7 @@ export default ({ index, data, windowHeight }) => {
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",
           }}
-          src="./img/1/fondos/nube1.png"
+          src="./img/comun/fondos/nube1.png"
           width="600px"
           height="124px"
           alt=""
@@ -99,7 +99,7 @@ export default ({ index, data, windowHeight }) => {
             transform: `translate(0, ${bounds.top / 2}px)`,
             transformOrigin: "50% 50%",
           }}
-          src="./img/1/fondos/nube4.png"
+          src="./img/comun/fondos/nube4.png"
           width="201px"
           height="85px"
           alt=""

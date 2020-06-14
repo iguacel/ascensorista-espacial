@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Burguer from "../components/ui/Burguer";
+// import Burguer from "../components/ui/Burguer";
 import Nav from "../components/ui/Nav";
 
 import {
@@ -13,7 +13,7 @@ const Ui = () => {
 
   return (
     <div>
-      {isExp && <Burguer />}
+      {/* {isExp && <Burguer />} */}
       {isExp && <Nav />}
     </div>
   );

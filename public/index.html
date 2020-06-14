@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="El ascensorista espacial" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96648605-7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <title>El ascensorista espacial</title>
+    gtag('config', 'UA-96648605-7');
+  </script>
+  <!-- END GA -->
+  <meta charset="utf-8" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Sketches" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>Calvichi comics</title>
+  <!-- Search Engine -->
+  <meta name="description" content="Webcomics de Calvichis, The Pilot Dog y otros artistas" />
+  <meta name="image" content="https://iguacel.github.io/acensorista-espacial/img/poster.jpg" />
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="El ascensorista espacial" />
+  <meta itemprop="description" content="Calvichi comics" />
+  <meta itemprop="image" content="https://iguacel.github.io/ascensorista-espacial/img/poster.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Calvichi comics" />
+  <meta name="twitter:description" content="Webcomics de Calvichis, The Pilot Dog y otros artistas" />
+  <meta name="twitter:site" content="@infoiguacel" />
+  <meta name="twitter:creator" content="@infoiguacel" />
+  <meta name="twitter:image:src" content="https://iguacel.github.io/ascensorista-espacial/img/poster.jpg" />
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="Calvichi comics" />
+  <meta name="og:description" content="Webcomics de Calvichis, The Pilot Dog y otros artistas" />
+  <meta name="og:image" content="https://iguacel.github.io/ascensorista-espacial/img/poster.jpg" />
+  <meta name="og:url" content="https://iguacel.github.io/ascensorista-espacial/" />
+  <meta name="og:site_name" content="Calvichi comics" />
+  <meta name="og:type" content="website" />
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <div id="modal-root"></div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
 </body>
 
 </html>
