@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NUM = 1;
+export const NUM = 2;
 
 export default {
   exp_1: {
@@ -25,28 +25,28 @@ export default {
       </p>
     )
   },
-  // exp_2: {
-  //   id: "exp_2",
-  //   index: 2,
-  //   destacado: false,
-  //   epi: "Último",
-  //   title: "Responsabilidad",
-  //   date: "2020-06-22",
-  //   creditos: "Francisco Asencio, J. Domínguez",
-  //   info: (
-  //     <p>
-  //       Dibujo: J. Domínguez. Guión: {" "}
-  //       <a
-  //         href="https://www.instagram.com/francisco_asencio/"
-  //         title="Francisco Asencio"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Francisco Asencio
-  //       </a>.
-  //     </p>
-  //   )
-  // },
+  exp_2: {
+    id: "exp_2",
+    index: 2,
+    destacado: true,
+    epi: "Último",
+    title: "Responsabilidad",
+    date: "2020-06-22",
+    creditos: "Francisco Asencio, J. Domínguez",
+    info: (
+      <p>
+        Dibujo: J. Domínguez. Guión: {" "}
+        <a
+          href="https://www.instagram.com/francisco_asencio/"
+          title="Francisco Asencio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Francisco Asencio
+        </a>.
+      </p>
+    )
+  },
   // exp_3: {
   //   id: "exp_3",
   //   index: 3,
