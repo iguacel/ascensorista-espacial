@@ -57,7 +57,7 @@ export default {
     creditos: "Francisco Asencio, J. Domínguez",
     info: (
       <p>
-        Dibujo: J. Domínguez. Guión: {" "}
+        Dibujo: JJ. Domínguez. Guión: {" "}
         <a
           href="https://www.instagram.com/francisco_asencio/"
           title="Francisco Asencio"
