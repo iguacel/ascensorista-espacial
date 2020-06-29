@@ -64,7 +64,7 @@ export default {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Francisco Asencio
+          Francisco Asencio.
         </a>.
       </p>)
   },
