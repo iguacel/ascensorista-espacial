@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NUM = 3;
+export const NUM = 4;
 
 export default {
   exp_1: {
@@ -68,20 +68,28 @@ export default {
         </a>.
       </p>)
   },
-  // exp_4: {
-  //   id: "exp_4",
-  //   index: 4,
-  //   destacado: false,
-  //   epi: "Último",
-  //   title: "Cuarto título larguísimo para pruebas en main",
-  //   date: "2020-05-25",
-  //   creditos: "Francisco Asencio, JJ",
-  //   info: (
-  //     <p>
-  //       Créditos.
-  //     </p>
-  //   )
-  // },
+  exp_4: {
+    id: "exp_4",
+    index: 4,
+    destacado: true,
+    epi: "Último",
+    title: "Distancia social",
+    date: "2020-07-06",
+    creditos: "Francisco Asencio, J. Domínguez",
+    info: (
+      <p>
+        Dibujo: JJ. Domínguez. Guión: {" "}
+        <a
+          href="https://www.instagram.com/francisco_asencio/"
+          title="Francisco Asencio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Francisco Asencio
+      </a>.
+      </p>
+    )
+  }
   // exp_5: {
   //   id: "exp_5",
   //   index: 5,
