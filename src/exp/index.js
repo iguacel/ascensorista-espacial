@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NUM = 4;
+export const NUM = 5;
 
 export default {
   exp_1: {
@@ -10,7 +10,7 @@ export default {
     epi: "Último",
     title: "El ascensorista espacial",
     date: "2020-06-15",
-    creditos: "Francisco Asencio, J. Domínguez",
+    creditos: "Calvichis",
     info: (
       <p>
         Dibujo: J. Domínguez. Guión:{" "}
@@ -32,7 +32,7 @@ export default {
     epi: "Último",
     title: "Responsabilidad",
     date: "2020-06-22",
-    creditos: "Francisco Asencio, J. Domínguez",
+    creditos: "Calvichis",
     info: (
       <p>
         Dibujo: J. Domínguez. Guión: {" "}
@@ -50,11 +50,11 @@ export default {
   exp_3: {
     id: "exp_3",
     index: 3,
-    destacado: true,
+    destacado: false,
     epi: "Último",
     title: "Mantenimiento",
     date: "2020-06-29",
-    creditos: "Francisco Asencio, J. Domínguez",
+    creditos: "Calvichis",
     info: (
       <p>
         Dibujo: JJ. Domínguez. Guión: {" "}
@@ -71,11 +71,33 @@ export default {
   exp_4: {
     id: "exp_4",
     index: 4,
-    destacado: true,
+    destacado: false,
     epi: "Último",
     title: "Distancia social",
     date: "2020-07-06",
-    creditos: "Francisco Asencio, J. Domínguez",
+    creditos: "Calvichis",
+    info: (
+      <p>
+        Dibujo: JJ. Domínguez. Guión: {" "}
+        <a
+          href="https://www.instagram.com/francisco_asencio/"
+          title="Francisco Asencio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Francisco Asencio
+      </a>.
+      </p>
+    )
+  },
+  exp_5: {
+    id: "exp_5",
+    index: 5,
+    destacado: true,
+    epi: "Último",
+    title: "Balneario nudista",
+    date: "2020-07-13",
+    creditos: "Calvichis",
     info: (
       <p>
         Dibujo: JJ. Domínguez. Guión: {" "}
@@ -90,18 +112,4 @@ export default {
       </p>
     )
   }
-  // exp_5: {
-  //   id: "exp_5",
-  //   index: 5,
-  //   destacado: false,
-  //   epi: "Último",
-  //   title: "Quinto título larguísimo para pruebas en main",
-  //   date: "2020-05-25",
-  //   creditos: "Francisco Asencio, JJ",
-  //   info: (
-  //     <p>
-  //       Créditos.
-  //     </p>
-  //   )
-  // }
 };

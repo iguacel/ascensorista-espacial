@@ -15,6 +15,7 @@ const Exp1 = lazy(() => import("./exp/Exp1"));
 const Exp2 = lazy(() => import("./exp/Exp2"));
 const Exp3 = lazy(() => import("./exp/Exp3"));
 const Exp4 = lazy(() => import("./exp/Exp4"));
+const Exp5 = lazy(() => import("./exp/Exp5"));
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/exp/2" component={Exp2} />
             <Route path="/exp/3" component={Exp3} />
             <Route path="/exp/4" component={Exp4} />
+            <Route path="/exp/5" component={Exp5} />
             <Route component={NotFound} />
           </Switch>
         </Suspense>
