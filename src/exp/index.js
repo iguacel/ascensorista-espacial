@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NUM = 5;
+export const NUM = 6;
 
 export default {
   exp_1: {
@@ -97,6 +97,28 @@ export default {
     epi: "Último",
     title: "Balneario nudista",
     date: "2020-07-13",
+    creditos: "Calvichis",
+    info: (
+      <p>
+        Dibujo: JJ. Domínguez. Guión: {" "}
+        <a
+          href="https://www.instagram.com/francisco_asencio/"
+          title="Francisco Asencio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Francisco Asencio
+      </a>.
+      </p>
+    )
+  },
+  exp_6: {
+    id: "exp_6",
+    index: 6,
+    destacado: true,
+    epi: "Último",
+    title: "Cambio",
+    date: "2020-07-20",
     creditos: "Calvichis",
     info: (
       <p>
