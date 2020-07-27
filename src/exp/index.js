@@ -93,7 +93,7 @@ export default {
   exp_5: {
     id: "exp_5",
     index: 5,
-    destacado: true,
+    destacado: false,
     epi: "Último",
     title: "Balneario nudista",
     date: "2020-07-13",
@@ -115,10 +115,10 @@ export default {
   exp_6: {
     id: "exp_6",
     index: 6,
-    destacado: true,
+    destacado: false,
     epi: "Último",
     title: "Cambio",
-    date: "2020-07-20",
+    date: "2020-07-27",
     creditos: "Calvichis",
     info: (
       <p>
@@ -131,6 +131,27 @@ export default {
         >
           Francisco Asencio
       </a>.
+      </p>
+    )
+  },
+  exp_7: {
+    id: "exp_7",
+    index: 7,
+    destacado: true,
+    epi: "Último",
+    title: "El mago",
+    date: "2020-07-20",
+    creditos: "Calvichis",
+    info: (
+      <p>
+        <a
+          href="https://www.instagram.com/francisco_asencio/"
+          title="Francisco Asencio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Francisco Asencio
+      </a>, Calvichis.
       </p>
     )
   }
