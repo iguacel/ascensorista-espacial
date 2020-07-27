@@ -118,7 +118,7 @@ export default {
     destacado: false,
     epi: "Último",
     title: "Cambio",
-    date: "2020-07-27",
+    date: "2020-07-20",
     creditos: "Calvichis",
     info: (
       <p>
@@ -140,7 +140,7 @@ export default {
     destacado: true,
     epi: "Último",
     title: "El mago",
-    date: "2020-07-20",
+    date: "2020-07-27",
     creditos: "Calvichis",
     info: (
       <p>
