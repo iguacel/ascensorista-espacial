@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import {
   HashRouter as Router,
   Route,
-  Switch
+  Switch,
 } from "react-router-dom";
 import Loader from "./components/ui/Loader";
 import Main from "./components/Main";
@@ -18,6 +18,7 @@ const Exp4 = lazy(() => import("./exp/Exp4"));
 const Exp5 = lazy(() => import("./exp/Exp5"));
 const Exp6 = lazy(() => import("./exp/Exp6"));
 const Exp7 = lazy(() => import("./exp/Exp7"));
+const Exp8 = lazy(() => import("./exp/Exp8"));
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/exp/5" component={Exp5} />
             <Route path="/exp/6" component={Exp6} />
             <Route path="/exp/7" component={Exp7} />
+            <Route path="/exp/8" component={Exp8} />
             <Route component={NotFound} />
           </Switch>
         </Suspense>

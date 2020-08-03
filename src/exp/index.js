@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NUM = 7;
+export const NUM = 8;
 
 export default {
   exp_1: {
@@ -141,6 +141,27 @@ export default {
     epi: "Último",
     title: "El mago",
     date: "2020-07-27",
+    creditos: "Calvichis",
+    info: (
+      <p>
+        <a
+          href="https://www.instagram.com/francisco_asencio/"
+          title="Francisco Asencio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Francisco Asencio
+      </a>, Calvichis.
+      </p>
+    )
+  },
+  exp_8: {
+    id: "exp_8",
+    index: 8,
+    destacado: true,
+    epi: "Último",
+    title: "Pasos de baile",
+    date: "2020-08-03",
     creditos: "Calvichis",
     info: (
       <p>
